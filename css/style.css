@@ -1,0 +1,263 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 1134px;
+    padding: 0 20px 0 20px;
+}
+
+.wrapper-desc {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 80px 0 130px 0;
+}
+
+@media (max-width: 513px) {
+    .wrapper-desc {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 371px) {
+    .wrapper-desc {
+        font-size: 18px;
+        margin-bottom: 70px;
+    }
+}
+
+.wrapper-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 418px) {
+    .wrapper-card {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        margin-bottom: 100px;
+    }
+
+    .wrapper-down {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 418px) {
+    .wrapper-down {
+        margin-bottom: 30px;
+    }
+}
+
+.drop-down_list {
+    width: 40px;
+    height: 40px;
+    border: 3px solid lightcoral;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px lightcoral;
+    cursor: pointer;
+    margin-right: 104px;
+    transition-duration: 0.3s;
+    user-select: none;
+}
+
+.drop-down_list:hover {
+    box-shadow: 0px 0px 90px lightcoral;
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 860px) {
+    .drop-down_list:hover {
+        box-shadow: none;
+    }
+}
+
+.drop-down_list.active {
+    box-shadow: 0px 0px 90px lightcoral;
+    transition-duration: 0.3s;
+}
+
+.gorisontal {
+    border: 2px solid lightslategray;
+    border-radius: 2px;
+    margin: 18px 0 -0 5px;
+    width: 26px;
+    top: 4.5%;
+    left: 27.6%;
+    display: inline-block;
+}
+
+.vertical {
+    border: 2px solid lightslategray;
+    border-radius: 2px;
+    margin: -24px -50px 0px -34px;
+    width: 26px;
+    top: 4.5%;
+    left: 27.6%;
+    transform: rotate(90deg);
+    transition-duration: 0.3s;
+    display: inline-block;
+}
+
+.gorisontal.active {
+    top: 5.5%;
+    transform: rotate(20deg);
+    margin: 13px 0px 10px 6px;
+    transition-duration: 0.3s;
+}
+
+.vertical.active {
+    top: 3.5%;
+    transform: rotate(160deg);
+    transition-duration: 0.3s;
+}
+
+.burger-plus {
+    display: none;
+    list-style: none;
+    padding: 0;
+    padding-top: 16px;
+}
+
+.burger-plus li {
+    opacity: 0;
+}
+
+.burger-plus li.active {
+    opacity: 1;
+}
+
+.burger-plus li {
+    border-bottom: 1px solid lightcoral;
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    padding: 10px 0;
+    transition-duration: 0.3s;
+    width: 150px;
+}
+
+.burger-plus li:hover {
+    padding-left: 5px;
+    margin-right: -5px;
+}
+
+@media (max-width: 860px) {
+    .burger-plus li:hover {
+        background: #000;
+        color: #fff;
+        padding-left: 0;
+        margin-right: 0;
+    }
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #45a04e;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #45a04e;
+    width: 130px;
+}
+
+.card-weather {
+    list-style: none;
+    padding: 0;
+}
+
+.city-name {
+    color: #45a04e;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.country-name {
+    color: rgb(153, 155, 39);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.city-temperature {
+    color: #000;
+    font-size: 34px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 16px 0 6px 0;
+}
+
+.city-clouds {
+    color: grey;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.speed-wind {
+    color: grey;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-left: 24px;
+}
+
+.wind-arrow {
+    background: url("../images/arrow_wind.png") no-repeat;
+    display: inline-block;
+    margin: 0 62px -16px 0;
+    width: 15px;
+    height: 10px;
+}
+
+.city-humidity {
+    color: grey;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-bottom: 16px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.city-wind {
+    padding-top: 16px;
+    color: grey;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.btn-update {
+    border: none;
+    background: #45a04e;
+    border-radius: 4px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 10px 24px;
+    margin-bottom: 24px;
+    transition-duration: 0.3s;
+}
+
+.btn-update:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+}
+
+.btn-update:active {
+    margin-top: 1px;
+    margin-bottom: 23px;
+}
